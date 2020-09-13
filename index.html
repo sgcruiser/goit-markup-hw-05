@@ -16,10 +16,12 @@
   </head>
   <body>
     <!-- Верхняя линия сайта -->
+
     <header class="hat-page" id="home-page">
       <div class="container">
         <nav class="nav">
           <!-- Логотип компании -->
+
           <a class="logo link" href="#home-page">
             <span class="accent">Web</span>Studio
           </a>
@@ -45,6 +47,7 @@
 
         <ul class="communications list">
           <!-- Ссылка на адрес электронной почты -->
+
           <li class="item">
             <a
               class="communications-link link"
@@ -56,7 +59,9 @@
               info@devstudio.com</a
             >
           </li>
+
           <!-- Ссылка на телефоный номер -->
+
           <li class="item">
             <a class="communications-link link" href="tel:+38-096-111-11-11">
               <svg class="icon smartphone">
@@ -71,14 +76,18 @@
 
     <main>
       <!-- Шапка -->
+
       <section class="banner">
         <div class="container">
           <h1 class="banner-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <button class="button" data-modal-open type="button">
+            Заказать услугу
+          </button>
         </div>
       </section>
 
       <!-- Особенности -->
+
       <section class="section">
         <div class="container feature">
           <h2 class="section-title none-display">Особенности</h2>
@@ -117,10 +126,10 @@
       </section>
 
       <!-- Чем мы занимаемся -->
+
       <section class="section">
         <div class="container practice">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <!-- <div class="practice-list"> -->
           <ul class="practice-list list">
             <li class="item">
               <div class="practice-item-box">
@@ -156,11 +165,11 @@
               </div>
             </li>
           </ul>
-          <!-- </div> -->
         </div>
       </section>
 
       <!-- Наша команда -->
+
       <section class="section team">
         <div class="container team-box">
           <h2 class="section-title">Наша команда</h2>
@@ -439,6 +448,7 @@
     </main>
 
     <!-- Футер -->
+
     <footer class="footer">
       <div class="container footer-box">
         <div class="main-address">
@@ -447,6 +457,7 @@
           </a>
 
           <!-- Адрес -->
+
           <address class="address">
             <ul class="address-list list">
               <li class="item">г. Киев, пр-т Леси Украинки, 26</li>
@@ -465,6 +476,7 @@
         </div>
 
         <!-- Социальные ссылки -->
+
         <div class="social">
           <h2 class="title">Присоеденяйтесь</h2>
           <ul class="social-list list">
@@ -496,5 +508,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальное окно -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-close" data-modal-close type="button">
+          <svg class="button-close-svg">
+            <use href="./images/svg/sprite.svg#btn-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

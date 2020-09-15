@@ -374,8 +374,6 @@ body {
 
   width: 370px;
   height: 70px;
-  padding-top: 27px;
-  padding-bottom: 27px;
 
   background-color: rgba(47, 48, 58, 0.8);
 }
@@ -593,6 +591,9 @@ body {
 /* Footer */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--dark-color);
 
   color: #ffffff;
@@ -602,8 +603,7 @@ body {
 
 .footer-box {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  align-items: baseline;
 }
 
 .footer .title {
@@ -652,10 +652,6 @@ body {
 }
 
 /* Social link */
-
-.social {
-  padding-top: 12px;
-}
 
 .social .title {
   margin-top: 0;
@@ -847,6 +843,7 @@ body {
 
 .catalog-description-text {
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 18px;
   line-height: calc(28 / 18);
   /* or 156% */

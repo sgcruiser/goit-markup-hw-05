@@ -468,12 +468,12 @@ body {
   align-items: center;
   width: 44px;
   height: 44px;
-
+  fill: currentColor;
   border-radius: 50%;
 
   color: var(--primary-text-color);
 
-  transition-property: background-color;
+  transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -490,8 +490,6 @@ body {
 .team-linkedin {
   width: 20px;
   height: 20px;
-
-  fill: currentColor;
 }
 
 /* Clients */
@@ -634,7 +632,7 @@ body {
   font-style: normal;
 }
 
-.address .link {
+.address-link {
   color: rgba(255, 255, 255, 0.6);
 
   transition-property: color;
@@ -642,13 +640,18 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address .link:hover,
-.address .link:focus {
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
 
-.address-list .item + .item {
+.address-item + .address-item {
   margin-top: 9px;
+}
+
+.address-item p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Social link */
